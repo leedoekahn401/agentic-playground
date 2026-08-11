@@ -18,6 +18,3 @@ class Settings(BaseSettings):
 
 # Instantiate it once
 config = Settings()
-
-# Now other files can use it with perfect autocomplete in your IDE:
-# print(config.deepseek_api_key)
