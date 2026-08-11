@@ -1,6 +1,19 @@
 from typing import Annotated, List
 import operator
 
+from env_config import config
+
+from langchain.tools import tool
+from langchain.chat_models import init_chat_model
+
+
+llm = init_chat_model(
+    "deepseek-chat",
+    model_provider="openai",
+    api_key=config.deepseek_api_key,
+    base_url="https://api.deepseek.com",
+    temperature=0
+)
 
 # Schema for structured output to use in planning
 class Section(BaseModel):
