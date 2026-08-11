@@ -3,6 +3,9 @@ from langgraph.graph import StateGraph, START, END
 from IPython.display import Image, display
 
 
+from typing_extensions import Literal
+from langchain.messages import HumanMessage, SystemMessage
+
 from env_config import config
 
 from langchain.tools import tool
@@ -19,9 +22,6 @@ llm = init_chat_model(
 
 
 
-
-from typing_extensions import Literal
-from langchain.messages import HumanMessage, SystemMessage
 
 
 # Schema for structured output to use as routing logic
