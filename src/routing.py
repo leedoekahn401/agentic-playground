@@ -3,7 +3,7 @@ from langgraph.graph import StateGraph, START, END
 from IPython.display import Image, display
 
 
-from typing_extensions import Literal
+from typing import Literal
 from langchain.messages import HumanMessage, SystemMessage
 
 from env_config import config
